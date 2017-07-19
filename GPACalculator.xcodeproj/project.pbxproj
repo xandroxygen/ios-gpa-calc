@@ -408,6 +408,7 @@
 				20C5BF301EF1F93B006A03C1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		20C5BF311EF1F93B006A03C1 /* Build configuration list for PBXNativeTarget "GPACalculatorTests" */ = {
 			isa = XCConfigurationList;
@@ -416,6 +417,7 @@
 				20C5BF331EF1F93B006A03C1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
