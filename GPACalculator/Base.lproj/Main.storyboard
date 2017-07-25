@@ -23,19 +23,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="9zY-yd-0kR">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="736.66666666666663"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="1va-Vd-A4J">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="226.66666666666666"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="226.33333333333334"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SxQ-Ug-8Nd">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="181.33333333333334"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="181"/>
                                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="120"/>
                                                 <color key="textColor" red="0.0" green="0.49803921569999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Projected GPA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GTN-bl-Pzc">
-                                                <rect key="frame" x="0.0" y="181.33333333333334" width="414" height="45.333333333333314"/>
+                                                <rect key="frame" x="0.0" y="181" width="414" height="45.333333333333343"/>
                                                 <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="32"/>
                                                 <color key="textColor" red="0.0" green="0.49803921569999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -48,10 +48,10 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="jFX-Tp-YmT" customClass="ClassView" customModule="GPACalculator" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="226.66666666666663" width="414" height="453"/>
+                                        <rect key="frame" x="0.0" y="226.33333333333337" width="414" height="452.33333333333326"/>
                                         <subviews>
                                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mly-1b-WL2">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="453"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="452.33333333333326"/>
                                                 <connections>
                                                     <segue destination="TiP-tu-prW" kind="embed" id="Mac-pP-Bfm"/>
                                                 </connections>
@@ -59,7 +59,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gMb-Ni-wDq">
-                                        <rect key="frame" x="0.0" y="679.66666666666663" width="414" height="57"/>
+                                        <rect key="frame" x="0.0" y="678.66666666666652" width="414" height="57.333333333333371"/>
                                     </stackView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -80,6 +80,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eDI-QR-stx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="168" y="38"/>
         </scene>
         <!--Class Controller-->
         <scene sceneID="dvJ-79-PnG">
@@ -90,37 +91,23 @@
                         <viewControllerLayoutGuide type="bottom" id="2ve-01-m3i"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kS7-74-BAs" customClass="ClassView" customModule="GPACalculator" customModuleProvider="target">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="453"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="452.33333333333326"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="d2J-Wh-MCM">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="453"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="452.33333333333331"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="44d-QS-yC6">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="139.33333333333334"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="139"/>
                                         <subviews>
-                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="uxo-53-b1b">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="99.333333333333329"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="shp-Qk-u5m">
-                                                    <size key="itemSize" width="50" height="50"/>
-                                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                                </collectionViewFlowLayout>
-                                                <cells>
-                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CreditHour" id="1CS-eb-I3t">
-                                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                                            <autoresizingMask key="autoresizingMask"/>
-                                                        </view>
-                                                    </collectionViewCell>
-                                                </cells>
-                                            </collectionView>
+                                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f1P-vl-pdB">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="99"/>
+                                                <connections>
+                                                    <segue destination="m5e-x4-Og6" kind="embed" id="gb8-gU-Yo5"/>
+                                                </connections>
+                                            </containerView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Credit Hours" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0vv-0y-cYu">
-                                                <rect key="frame" x="0.0" y="99.333333333333343" width="414" height="40.000000000000028"/>
+                                                <rect key="frame" x="0.0" y="99" width="414" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="Zaa-vU-iwj"/>
                                                 </constraints>
@@ -131,30 +118,16 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Yfl-PA-3qG">
-                                        <rect key="frame" x="0.0" y="139.33333333333331" width="414" height="209.33333333333331"/>
+                                        <rect key="frame" x="0.0" y="139" width="414" height="208.33333333333331"/>
                                         <subviews>
-                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="F3x-3n-CMn">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="169.33333333333334"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="BjB-Ky-yRU">
-                                                    <size key="itemSize" width="50" height="50"/>
-                                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                                </collectionViewFlowLayout>
-                                                <cells>
-                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Grade" id="dT2-YI-qKO">
-                                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                                            <autoresizingMask key="autoresizingMask"/>
-                                                        </view>
-                                                    </collectionViewCell>
-                                                </cells>
-                                            </collectionView>
+                                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5BH-Dv-KZX">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="168.33333333333331"/>
+                                                <connections>
+                                                    <segue destination="dSL-vV-4Xw" kind="embed" id="nBq-k1-WQU"/>
+                                                </connections>
+                                            </containerView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Grade" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SZd-Th-OYN">
-                                                <rect key="frame" x="0.0" y="169.33333333333334" width="414" height="40"/>
+                                                <rect key="frame" x="0.0" y="168.33333333333331" width="414" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="hQ4-FI-kb0"/>
                                                 </constraints>
@@ -165,16 +138,16 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="wSd-UO-xr5">
-                                        <rect key="frame" x="0.0" y="348.66666666666674" width="414" height="104.33333333333331"/>
+                                        <rect key="frame" x="0.0" y="347.33333333333331" width="414" height="105"/>
                                         <subviews>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dlp-xc-r5g">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="64.333333333333314"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="65"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Class Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YXI-wp-VDi">
-                                                <rect key="frame" x="0.0" y="64.333333333333314" width="414" height="40"/>
+                                                <rect key="frame" x="0.0" y="65" width="414" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="ayD-6f-PR2"/>
                                                 </constraints>
@@ -202,7 +175,98 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wXk-W9-BjH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="909" y="124"/>
+            <point key="canvasLocation" x="923" y="38"/>
+        </scene>
+        <!--Credit Hours Collection Controller-->
+        <scene sceneID="ebK-Pa-tIM">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ssc-Iq-Z6d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="m5e-x4-Og6" customClass="CreditHoursCollectionController" customModule="GPACalculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="6eV-WI-o75">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="99"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="5" minimumInteritemSpacing="3" id="95U-u4-aSQ">
+                            <size key="itemSize" width="50" height="30"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CreditHour" id="zut-eZ-vED" customClass="CreditHoursCollectionViewCell" customModule="GPACalculator" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="50" height="30"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mfL-M5-gZP" customClass="ScaleCellView" customModule="GPACalculator" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="30"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </subviews>
+                                </view>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="mfL-M5-gZP" secondAttribute="bottom" id="bCt-na-3n3"/>
+                                    <constraint firstItem="mfL-M5-gZP" firstAttribute="top" secondItem="zut-eZ-vED" secondAttribute="top" id="ctF-Id-DGv"/>
+                                    <constraint firstItem="mfL-M5-gZP" firstAttribute="leading" secondItem="zut-eZ-vED" secondAttribute="leading" id="f4d-aL-E2a"/>
+                                    <constraint firstAttribute="trailing" secondItem="mfL-M5-gZP" secondAttribute="trailing" id="s2c-nn-IjU"/>
+                                </constraints>
+                                <size key="customSize" width="50" height="30"/>
+                                <connections>
+                                    <outlet property="scaleCellView" destination="mfL-M5-gZP" id="jhr-8o-vzX"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                    </collectionView>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1766.6666666666667" y="-106.3858695652174"/>
+        </scene>
+        <!--Grading Scale Collection Controller-->
+        <scene sceneID="vdC-mG-tzb">
+            <objects>
+                <viewController id="dSL-vV-4Xw" customClass="GradingScaleCollectionController" customModule="GPACalculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="vAy-PC-AAJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="168.33333333333331"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="2Oa-jr-VEY">
+                            <size key="itemSize" width="50" height="30"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Grade" id="MK1-px-g0Y" customClass="GradingScaleCollectionViewCell" customModule="GPACalculator" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="50" height="30"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2uo-7B-ixQ" customClass="ScaleCellView" customModule="GPACalculator" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </subviews>
+                                </view>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="2uo-7B-ixQ" secondAttribute="trailing" id="08M-8Y-JpW"/>
+                                    <constraint firstItem="2uo-7B-ixQ" firstAttribute="top" secondItem="MK1-px-g0Y" secondAttribute="top" id="CML-B2-BcG"/>
+                                    <constraint firstItem="2uo-7B-ixQ" firstAttribute="leading" secondItem="MK1-px-g0Y" secondAttribute="leading" id="gx3-lK-ftL"/>
+                                    <constraint firstAttribute="bottom" secondItem="2uo-7B-ixQ" secondAttribute="bottom" id="uqh-Gx-jt2"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="scaleCellView" destination="2uo-7B-ixQ" id="yd1-jg-sbE"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                    </collectionView>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eGu-e6-VJI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1767" y="38"/>
         </scene>
     </scenes>
 </document>
