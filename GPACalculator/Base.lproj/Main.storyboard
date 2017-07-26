@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Main Controller-->
         <scene sceneID="6Sc-8z-5aD">
             <objects>
-                <viewController id="ycV-2K-UvM" customClass="ViewController" customModule="GPACalculator" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ycV-2K-UvM" customClass="MainController" customModule="GPACalculator" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8MW-Qy-a7Q"/>
                         <viewControllerLayoutGuide type="bottom" id="pYX-zg-gU1"/>
@@ -53,7 +53,7 @@
                                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mly-1b-WL2">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="452.33333333333326"/>
                                                 <connections>
-                                                    <segue destination="TiP-tu-prW" kind="embed" id="Mac-pP-Bfm"/>
+                                                    <segue destination="TiP-tu-prW" kind="embed" identifier="class" id="Mac-pP-Bfm"/>
                                                 </connections>
                                             </containerView>
                                         </subviews>
@@ -77,6 +77,9 @@
                             <constraint firstItem="9zY-yd-0kR" firstAttribute="top" secondItem="RCU-7b-eHf" secondAttribute="top" id="kAL-ma-Sx4"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="projectedGPA" destination="SxQ-Ug-8Nd" id="5rb-tF-aZh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eDI-QR-stx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -112,7 +115,7 @@
                                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f1P-vl-pdB">
                                                 <rect key="frame" x="0.0" y="40" width="414" height="99"/>
                                                 <connections>
-                                                    <segue destination="m5e-x4-Og6" kind="embed" id="gb8-gU-Yo5"/>
+                                                    <segue destination="m5e-x4-Og6" kind="embed" identifier="creditHours" id="gb8-gU-Yo5"/>
                                                 </connections>
                                             </containerView>
                                         </subviews>
@@ -132,7 +135,7 @@
                                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5BH-Dv-KZX">
                                                 <rect key="frame" x="0.0" y="40" width="414" height="168"/>
                                                 <connections>
-                                                    <segue destination="dSL-vV-4Xw" kind="embed" id="nBq-k1-WQU"/>
+                                                    <segue destination="dSL-vV-4Xw" kind="embed" identifier="gradingScale" id="nBq-k1-WQU"/>
                                                 </connections>
                                             </containerView>
                                         </subviews>
@@ -175,7 +178,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wXk-W9-BjH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="921.73913043478262" y="37.907608695652179"/>
+            <point key="canvasLocation" x="919" y="16"/>
         </scene>
         <!--Credit Hours Collection Controller-->
         <scene sceneID="ebK-Pa-tIM">

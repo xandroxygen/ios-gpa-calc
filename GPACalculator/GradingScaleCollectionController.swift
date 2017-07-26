@@ -12,6 +12,7 @@ class GradingScaleCollectionController: UICollectionViewController {
     
     fileprivate let reuseIdentifier = "Grade"
     fileprivate var gradingScale = ["A", "A-", "B+", "B", "B-", "C+", "C", "C-", "D+", "D", "D-", "E"]
+    weak var delegate: GradingScaleDelegate?
     
     override func collectionView(_ collectionView: UICollectionView,
                                  numberOfItemsInSection section: Int) -> Int {
@@ -28,6 +29,10 @@ class GradingScaleCollectionController: UICollectionViewController {
     }
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print("Grade: \(gradingScale[indexPath.row])")
+        delegate?.didSelectGrade(controller: self, grade: gradingScale[indexPath.row])
     }
+}
+
+protocol GradingScaleDelegate: class {
+    func didSelectGrade(controller: GradingScaleCollectionController, grade: String)
 }

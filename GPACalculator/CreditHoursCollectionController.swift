@@ -12,6 +12,8 @@ class CreditHoursCollectionController: UICollectionViewController {
 
     fileprivate let reuseIdentifier = "CreditHour"
     fileprivate var creditHours = [5, 4, 3, 2, 1, 0.5]
+    weak var delegate: CreditHoursDelegate?
+
     
     override func collectionView(_ collectionView: UICollectionView,
                                  numberOfItemsInSection section: Int) -> Int {
@@ -28,7 +30,11 @@ class CreditHoursCollectionController: UICollectionViewController {
     }
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print("Hours: \(creditHours[indexPath.row])")
+        delegate?.didSelectCreditHour(controller: self, creditHours: creditHours[indexPath.row])
     }
+}
+
+protocol CreditHoursDelegate: class {
+    func didSelectCreditHour(controller: CreditHoursCollectionController, creditHours: Double)
 }
 
