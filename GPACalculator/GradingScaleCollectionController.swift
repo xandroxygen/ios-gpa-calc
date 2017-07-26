@@ -19,10 +19,15 @@ class GradingScaleCollectionController: UICollectionViewController {
     }
     
     override func collectionView(_ collectionView: UICollectionView,
-                                 cellForItemAt indexPath: IndexPath) -> GradingScaleCollectionViewCell {
+                                 cellForItemAt indexPath: IndexPath) -> ScaleViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier,
-                                                      for: indexPath) as! GradingScaleCollectionViewCell
-        cell.scaleCellView.label.text = gradingScale[indexPath[1]]
+                                                      for: indexPath) as! ScaleViewCell
+        let label = cell.contentView.subviews[0] as! UILabel
+        label.text = "\(gradingScale[indexPath.row])"
         return cell
+    }
+    
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print("Grade: \(gradingScale[indexPath.row])")
     }
 }

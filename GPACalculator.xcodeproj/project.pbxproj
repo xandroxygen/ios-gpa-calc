@@ -12,10 +12,7 @@
 		201E6B061F203A3C00471515 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201E6B051F203A3C00471515 /* MainController.swift */; };
 		201E6B081F2073A000471515 /* CreditHoursCollectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201E6B071F2073A000471515 /* CreditHoursCollectionController.swift */; };
 		202A4B6A1F27B8A300AE8960 /* GradingScaleCollectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202A4B691F27B8A300AE8960 /* GradingScaleCollectionController.swift */; };
-		202A4B741F27C3A600AE8960 /* ScaleCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202A4B731F27C3A600AE8960 /* ScaleCellView.swift */; };
-		202A4B781F27CB5300AE8960 /* ScaleCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 202A4B771F27CB5300AE8960 /* ScaleCellView.xib */; };
-		202A4B7A1F27DAE700AE8960 /* GradingScaleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202A4B791F27DAE700AE8960 /* GradingScaleCollectionViewCell.swift */; };
-		202A4B7C1F27DBD000AE8960 /* CreditHoursCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202A4B7B1F27DBD000AE8960 /* CreditHoursCollectionViewCell.swift */; };
+		202A4B7C1F27DBD000AE8960 /* ScaleViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202A4B7B1F27DBD000AE8960 /* ScaleViewCell.swift */; };
 		20C5BF151EF1F93A006A03C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C5BF141EF1F93A006A03C1 /* AppDelegate.swift */; };
 		20C5BF1A1EF1F93B006A03C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20C5BF181EF1F93B006A03C1 /* Main.storyboard */; };
 		20C5BF1C1EF1F93B006A03C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20C5BF1B1EF1F93B006A03C1 /* Assets.xcassets */; };
@@ -39,10 +36,7 @@
 		201E6B051F203A3C00471515 /* MainController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
 		201E6B071F2073A000471515 /* CreditHoursCollectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditHoursCollectionController.swift; sourceTree = "<group>"; };
 		202A4B691F27B8A300AE8960 /* GradingScaleCollectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradingScaleCollectionController.swift; sourceTree = "<group>"; };
-		202A4B731F27C3A600AE8960 /* ScaleCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScaleCellView.swift; sourceTree = "<group>"; };
-		202A4B771F27CB5300AE8960 /* ScaleCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScaleCellView.xib; sourceTree = "<group>"; };
-		202A4B791F27DAE700AE8960 /* GradingScaleCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradingScaleCollectionViewCell.swift; sourceTree = "<group>"; };
-		202A4B7B1F27DBD000AE8960 /* CreditHoursCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditHoursCollectionViewCell.swift; sourceTree = "<group>"; };
+		202A4B7B1F27DBD000AE8960 /* ScaleViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScaleViewCell.swift; sourceTree = "<group>"; };
 		20C5BF111EF1F93A006A03C1 /* GPACalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GPACalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20C5BF141EF1F93A006A03C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		20C5BF191EF1F93B006A03C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -87,10 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				201E6B021F20364A00471515 /* ClassView.swift */,
-				202A4B731F27C3A600AE8960 /* ScaleCellView.swift */,
-				202A4B771F27CB5300AE8960 /* ScaleCellView.xib */,
-				202A4B791F27DAE700AE8960 /* GradingScaleCollectionViewCell.swift */,
-				202A4B7B1F27DBD000AE8960 /* CreditHoursCollectionViewCell.swift */,
+				202A4B7B1F27DBD000AE8960 /* ScaleViewCell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -228,7 +219,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				20C5BF1F1EF1F93B006A03C1 /* LaunchScreen.storyboard in Resources */,
-				202A4B781F27CB5300AE8960 /* ScaleCellView.xib in Resources */,
 				20C5BF1C1EF1F93B006A03C1 /* Assets.xcassets in Resources */,
 				20C5BF1A1EF1F93B006A03C1 /* Main.storyboard in Resources */,
 			);
@@ -248,11 +238,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				202A4B7C1F27DBD000AE8960 /* CreditHoursCollectionViewCell.swift in Sources */,
+				202A4B7C1F27DBD000AE8960 /* ScaleViewCell.swift in Sources */,
 				201E6B061F203A3C00471515 /* MainController.swift in Sources */,
-				202A4B741F27C3A600AE8960 /* ScaleCellView.swift in Sources */,
 				201E6B011F2035D400471515 /* ClassController.swift in Sources */,
-				202A4B7A1F27DAE700AE8960 /* GradingScaleCollectionViewCell.swift in Sources */,
 				20C5BF151EF1F93A006A03C1 /* AppDelegate.swift in Sources */,
 				202A4B6A1F27B8A300AE8960 /* GradingScaleCollectionController.swift in Sources */,
 				201E6B081F2073A000471515 /* CreditHoursCollectionController.swift in Sources */,

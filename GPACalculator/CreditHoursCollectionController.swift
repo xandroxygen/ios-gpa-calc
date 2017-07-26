@@ -19,11 +19,16 @@ class CreditHoursCollectionController: UICollectionViewController {
     }
     
     override func collectionView(_ collectionView: UICollectionView,
-                                 cellForItemAt indexPath: IndexPath) -> CreditHoursCollectionViewCell {
+                                 cellForItemAt indexPath: IndexPath) -> ScaleViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier,
-                                                      for: indexPath) as! CreditHoursCollectionViewCell
-        cell.scaleCellView.label.text = "\(creditHours[indexPath[1]])"
+                                                      for: indexPath) as! ScaleViewCell
+        let label = cell.contentView.subviews[0] as! UILabel
+        label.text = "\(creditHours[indexPath.row])"
         return cell
     }
     
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print("Hours: \(creditHours[indexPath.row])")
+    }
 }
+
