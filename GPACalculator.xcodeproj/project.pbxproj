@@ -14,6 +14,8 @@
 		202A4B6A1F27B8A300AE8960 /* GradingScaleCollectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202A4B691F27B8A300AE8960 /* GradingScaleCollectionController.swift */; };
 		202A4B7C1F27DBD000AE8960 /* ScaleViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202A4B7B1F27DBD000AE8960 /* ScaleViewCell.swift */; };
 		202A4B821F293EB300AE8960 /* Class.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202A4B811F293EB300AE8960 /* Class.swift */; };
+		202A4B841F29548200AE8960 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202A4B831F29548200AE8960 /* Student.swift */; };
+		202A4B861F2A35C600AE8960 /* GradingScale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202A4B851F2A35C600AE8960 /* GradingScale.swift */; };
 		20C5BF151EF1F93A006A03C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C5BF141EF1F93A006A03C1 /* AppDelegate.swift */; };
 		20C5BF1A1EF1F93B006A03C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20C5BF181EF1F93B006A03C1 /* Main.storyboard */; };
 		20C5BF1C1EF1F93B006A03C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20C5BF1B1EF1F93B006A03C1 /* Assets.xcassets */; };
@@ -39,6 +41,8 @@
 		202A4B691F27B8A300AE8960 /* GradingScaleCollectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradingScaleCollectionController.swift; sourceTree = "<group>"; };
 		202A4B7B1F27DBD000AE8960 /* ScaleViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScaleViewCell.swift; sourceTree = "<group>"; };
 		202A4B811F293EB300AE8960 /* Class.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Class.swift; sourceTree = "<group>"; };
+		202A4B831F29548200AE8960 /* Student.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
+		202A4B851F2A35C600AE8960 /* GradingScale.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradingScale.swift; sourceTree = "<group>"; };
 		20C5BF111EF1F93A006A03C1 /* GPACalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GPACalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20C5BF141EF1F93A006A03C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		20C5BF191EF1F93B006A03C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -92,6 +96,8 @@
 			isa = PBXGroup;
 			children = (
 				202A4B811F293EB300AE8960 /* Class.swift */,
+				202A4B831F29548200AE8960 /* Student.swift */,
+				202A4B851F2A35C600AE8960 /* GradingScale.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -245,8 +251,10 @@
 				201E6B061F203A3C00471515 /* MainController.swift in Sources */,
 				201E6B011F2035D400471515 /* ClassController.swift in Sources */,
 				20C5BF151EF1F93A006A03C1 /* AppDelegate.swift in Sources */,
+				202A4B841F29548200AE8960 /* Student.swift in Sources */,
 				202A4B821F293EB300AE8960 /* Class.swift in Sources */,
 				202A4B6A1F27B8A300AE8960 /* GradingScaleCollectionController.swift in Sources */,
+				202A4B861F2A35C600AE8960 /* GradingScale.swift in Sources */,
 				201E6B081F2073A000471515 /* CreditHoursCollectionController.swift in Sources */,
 				201E6B031F20364A00471515 /* ClassView.swift in Sources */,
 			);
