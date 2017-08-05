@@ -8,6 +8,6 @@
 
 import UIKit
 
-class ClassView: UIStackView {
+class ClassView: UIView {
 
 }

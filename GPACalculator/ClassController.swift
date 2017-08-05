@@ -8,14 +8,29 @@
 
 import UIKit
 
-class ClassController: UIViewController, CreditHoursDelegate, GradingScaleDelegate {
+class ClassController: UIViewController, CreditHoursDelegate, GradingScaleDelegate, UITextFieldDelegate {
     
+    @IBOutlet weak var className: UITextField!
     var currentClass: Class?
     
     func setup() {
         if currentClass == nil {
             currentClass = Class()
         }
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        setup()
+        self.className.delegate = self
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        currentClass?.name = textField.text
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        return textField.resignFirstResponder()
     }
     
     func emitClassIsReady() {
@@ -25,13 +40,11 @@ class ClassController: UIViewController, CreditHoursDelegate, GradingScaleDelega
     }
     
     func didSelectCreditHour(controller: CreditHoursCollectionController, creditHours: Double) {
-        setup()
         currentClass?.creditHours = creditHours
         emitClassIsReady()
     }
     
     func didSelectGrade(controller: GradingScaleCollectionController, grade: String) {
-        setup()
         currentClass?.grade = grade
         emitClassIsReady()
     }
