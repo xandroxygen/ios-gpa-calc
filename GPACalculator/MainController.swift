@@ -11,12 +11,17 @@ import UIKit
 class MainController: UIViewController {
 
     @IBOutlet weak var projectedGPA: UILabel!
+    weak var delegate: AddClassDelegate?
     var student: Student?
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        student = Student()
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         NotificationCenter.default.addObserver(forName: .classIsReady, object: nil, queue: nil, using: catchClassIsReady)
-        student = Student()
     }
     
     func updateGPA() {
@@ -28,7 +33,24 @@ class MainController: UIViewController {
         student?.classes.append(currentClass)
         updateGPA()
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "classList" {
+            if let destination = segue.destination as? ClassListViewController {
+                delegate = destination
+                destination.student = self.student
+                destination.setup()
+            }
+        }
+    }
 
+    @IBAction func addClass(_ sender: Any) {
+        delegate?.didAddClass()
+    }
+}
+
+protocol AddClassDelegate: class {
+    func didAddClass()
 }
 
 extension Notification.Name {

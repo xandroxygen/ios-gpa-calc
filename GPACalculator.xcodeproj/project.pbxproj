@@ -16,6 +16,8 @@
 		202A4B821F293EB300AE8960 /* Class.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202A4B811F293EB300AE8960 /* Class.swift */; };
 		202A4B841F29548200AE8960 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202A4B831F29548200AE8960 /* Student.swift */; };
 		202A4B861F2A35C600AE8960 /* GradingScale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202A4B851F2A35C600AE8960 /* GradingScale.swift */; };
+		202BE0251F4257EB009F5896 /* ClassListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202BE0241F4257EB009F5896 /* ClassListViewController.swift */; };
+		202BE0271F425827009F5896 /* EMPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202BE0261F425827009F5896 /* EMPageViewController.swift */; };
 		20C5BF151EF1F93A006A03C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C5BF141EF1F93A006A03C1 /* AppDelegate.swift */; };
 		20C5BF1A1EF1F93B006A03C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20C5BF181EF1F93B006A03C1 /* Main.storyboard */; };
 		20C5BF1C1EF1F93B006A03C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20C5BF1B1EF1F93B006A03C1 /* Assets.xcassets */; };
@@ -43,6 +45,8 @@
 		202A4B811F293EB300AE8960 /* Class.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Class.swift; sourceTree = "<group>"; };
 		202A4B831F29548200AE8960 /* Student.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
 		202A4B851F2A35C600AE8960 /* GradingScale.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradingScale.swift; sourceTree = "<group>"; };
+		202BE0241F4257EB009F5896 /* ClassListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassListViewController.swift; sourceTree = "<group>"; };
+		202BE0261F425827009F5896 /* EMPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EMPageViewController.swift; sourceTree = "<group>"; };
 		20C5BF111EF1F93A006A03C1 /* GPACalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GPACalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20C5BF141EF1F93A006A03C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		20C5BF191EF1F93B006A03C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -79,6 +83,8 @@
 				201E6B001F2035D400471515 /* ClassController.swift */,
 				201E6B071F2073A000471515 /* CreditHoursCollectionController.swift */,
 				202A4B691F27B8A300AE8960 /* GradingScaleCollectionController.swift */,
+				202BE0241F4257EB009F5896 /* ClassListViewController.swift */,
+				202BE0261F425827009F5896 /* EMPageViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -257,6 +263,8 @@
 				202A4B861F2A35C600AE8960 /* GradingScale.swift in Sources */,
 				201E6B081F2073A000471515 /* CreditHoursCollectionController.swift in Sources */,
 				201E6B031F20364A00471515 /* ClassView.swift in Sources */,
+				202BE0251F4257EB009F5896 /* ClassListViewController.swift in Sources */,
+				202BE0271F425827009F5896 /* EMPageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

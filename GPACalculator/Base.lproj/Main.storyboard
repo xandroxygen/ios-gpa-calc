@@ -63,7 +63,7 @@
                                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mly-1b-WL2">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="451.66666666666663"/>
                                                 <connections>
-                                                    <segue destination="TiP-tu-prW" kind="embed" identifier="class" id="Mac-pP-Bfm"/>
+                                                    <segue destination="HYj-uK-FHK" kind="embed" identifier="classList" id="gvf-Mh-uXU"/>
                                                 </connections>
                                             </containerView>
                                         </subviews>
@@ -86,6 +86,15 @@
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gMb-Ni-wDq">
                                         <rect key="frame" x="0.0" y="678.66666666666652" width="414" height="57.333333333333371"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F4Q-1T-lvl">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="57.333333333333371"/>
+                                                <state key="normal" title="Add Class"/>
+                                                <connections>
+                                                    <action selector="addClass:" destination="ycV-2K-UvM" eventType="touchUpInside" id="Thv-Bn-d1a"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
                                     </stackView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -114,20 +123,20 @@
         <!--Class Controller-->
         <scene sceneID="dvJ-79-PnG">
             <objects>
-                <viewController id="TiP-tu-prW" customClass="ClassController" customModule="GPACalculator" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ClassController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="TiP-tu-prW" customClass="ClassController" customModule="GPACalculator" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="JlG-ao-79f"/>
                         <viewControllerLayoutGuide type="bottom" id="2ve-01-m3i"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kS7-74-BAs" customClass="ClassView" customModule="GPACalculator" customModuleProvider="target">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="451.66666666666663"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="d2J-Wh-MCM">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="452"/>
+                                <rect key="frame" x="0.0" y="20" width="414" height="716"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="wSd-UO-xr5">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="105"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="165.33333333333334"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Class Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YXI-wp-VDi">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="40"/>
@@ -139,10 +148,10 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZRf-Sd-Wel">
-                                                <rect key="frame" x="0.0" y="40" width="414" height="65"/>
+                                                <rect key="frame" x="0.0" y="40" width="414" height="125.33333333333334"/>
                                                 <subviews>
                                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dlp-xc-r5g">
-                                                        <rect key="frame" x="15" y="0.0" width="384" height="65"/>
+                                                        <rect key="frame" x="15" y="0.0" width="384" height="125.33333333333334"/>
                                                         <nil key="textColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" returnKeyType="done"/>
@@ -161,7 +170,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="44d-QS-yC6">
-                                        <rect key="frame" x="0.0" y="105" width="414" height="139"/>
+                                        <rect key="frame" x="0.0" y="165.33333333333331" width="414" height="220.33333333333331"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Credit Hours" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0vv-0y-cYu">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="40"/>
@@ -173,7 +182,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f1P-vl-pdB">
-                                                <rect key="frame" x="0.0" y="40" width="414" height="99"/>
+                                                <rect key="frame" x="0.0" y="40.000000000000014" width="414" height="180.33333333333337"/>
                                                 <connections>
                                                     <segue destination="m5e-x4-Og6" kind="embed" identifier="creditHours" id="gb8-gU-Yo5"/>
                                                 </connections>
@@ -181,7 +190,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Yfl-PA-3qG">
-                                        <rect key="frame" x="0.0" y="244" width="414" height="208"/>
+                                        <rect key="frame" x="0.0" y="385.66666666666674" width="414" height="330.33333333333326"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Grade" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SZd-Th-OYN">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="40"/>
@@ -193,7 +202,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5BH-Dv-KZX">
-                                                <rect key="frame" x="0.0" y="40" width="414" height="168"/>
+                                                <rect key="frame" x="0.0" y="40" width="414" height="290.33333333333331"/>
                                                 <connections>
                                                     <segue destination="dSL-vV-4Xw" kind="embed" identifier="gradingScale" id="nBq-k1-WQU"/>
                                                 </connections>
@@ -221,14 +230,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wXk-W9-BjH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="919" y="16"/>
+            <point key="canvasLocation" x="1714" y="38"/>
         </scene>
         <!--Credit Hours Collection Controller-->
         <scene sceneID="ebK-Pa-tIM">
             <objects>
                 <viewController id="m5e-x4-Og6" customClass="CreditHoursCollectionController" customModule="GPACalculator" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="6eV-WI-o75">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="99"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="180.33333333333337"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="5" minimumInteritemSpacing="2" id="95U-u4-aSQ">
@@ -251,14 +260,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ssc-Iq-Z6d" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1725" y="-112"/>
+            <point key="canvasLocation" x="2520" y="-90"/>
         </scene>
         <!--Grading Scale Collection Controller-->
         <scene sceneID="vdC-mG-tzb">
             <objects>
                 <viewController id="dSL-vV-4Xw" customClass="GradingScaleCollectionController" customModule="GPACalculator" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="vAy-PC-AAJ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="168"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="290.33333333333331"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="5" minimumInteritemSpacing="2" id="2Oa-jr-VEY">
@@ -281,7 +290,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eGu-e6-VJI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1725" y="59"/>
+            <point key="canvasLocation" x="2520" y="79"/>
+        </scene>
+        <!--Class List View Controller-->
+        <scene sceneID="maO-lD-bVc">
+            <objects>
+                <viewController id="HYj-uK-FHK" customClass="ClassListViewController" customModule="GPACalculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xeS-oF-dJF"/>
+                        <viewControllerLayoutGuide type="bottom" id="VdH-4o-lMe"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="LRb-uD-GCZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="451.66666666666663"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mHs-wX-o23" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="914" y="106"/>
         </scene>
     </scenes>
 </document>

@@ -8,12 +8,23 @@
 
 import UIKit
 
-class Class {
+class Class: Equatable {
     var creditHours: Double?
     var grade: String?
     var name: String?
+    private var id: Int
+    static var num: Int = 0
+    
+    init() {
+        id = Class.num
+        Class.num += 1
+    }
     
     func isValid() -> Bool {
         return creditHours != nil && grade != nil
+    }
+    
+    static func ==(lhs: Class, rhs: Class) -> Bool {
+        return lhs.id == rhs.id
     }
 }

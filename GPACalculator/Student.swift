@@ -9,7 +9,7 @@
 import UIKit
 
 class Student {
-    var classes: [Class] = []
+    var classes: [Class]
     var initialCreditHours: Double = 0.0
     var initialPoints: Double = 0.0
     var initialGPA: Double = 0.0
@@ -17,14 +17,15 @@ class Student {
     
     init() {
         gradingScale = GradingScale()
+        classes = [ Class(), Class() ]
     }
     
     func projectGPA() -> Double {
         var totalHours = initialCreditHours
         var totalPoints = initialPoints
         for c in classes {
-            totalHours += c.creditHours!
-            totalPoints += gradingScale.getDefault()[c.grade!]! * c.creditHours!
+            totalHours += c.creditHours ?? 0
+            totalPoints += gradingScale.getDefault()[(c.grade ?? "A")]! * (c.creditHours ?? 0)
         }
         return totalPoints / totalHours
     }
