@@ -11,7 +11,15 @@ import UIKit
 class ClassController: UIViewController, CreditHoursDelegate, GradingScaleDelegate, UITextFieldDelegate {
     
     @IBOutlet weak var className: UITextField!
-    var currentClass: Class?
+    var currentClass: Class? {
+        didSet {
+            self.setHours()
+            self.setGrade()
+            self.setName()
+        }
+    }
+    var creditHoursController: CreditHoursCollectionController?
+    var gradingScaleController: GradingScaleCollectionController?
     
     func setup() {
         if currentClass == nil {
@@ -19,10 +27,27 @@ class ClassController: UIViewController, CreditHoursDelegate, GradingScaleDelega
         }
     }
     
+    func setHours() {
+        if let hours = currentClass?.creditHours {
+            creditHoursController?.selectHours(hours: hours)
+        }
+    }
+    
+    func setGrade() {
+        if let grade = currentClass?.grade {
+            gradingScaleController?.selectGrade(grade: grade)
+        }
+    }
+    
+    func setName() {
+        self.className?.text = currentClass?.name
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setup()
         self.className.delegate = self
+        setName()
     }
     
     func textFieldDidEndEditing(_ textField: UITextField) {
@@ -53,10 +78,14 @@ class ClassController: UIViewController, CreditHoursDelegate, GradingScaleDelega
         if (segue.identifier == "creditHours") {
             let creditHoursController = segue.destination as! CreditHoursCollectionController
             creditHoursController.delegate = self
+            self.creditHoursController = creditHoursController
+            self.setHours()
         }
         else if (segue.identifier == "gradingScale") {
             let gradingScaleController = segue.destination as! GradingScaleCollectionController
             gradingScaleController.delegate = self
+            self.gradingScaleController = gradingScaleController
+            self.setGrade()
         }
     }
 }

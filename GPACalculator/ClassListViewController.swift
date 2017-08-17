@@ -79,26 +79,26 @@ class ClassListViewController: UIViewController, EMPageViewControllerDataSource,
     
     func em_pageViewController(_ pageViewController: EMPageViewController, willStartScrollingFrom startingViewController: UIViewController, destinationViewController: UIViewController) {
         
-        let start = startingViewController as! ClassController
-        let destination = destinationViewController as! ClassController
-        
-        print("Will start scrolling from \(start.currentClass?.name ?? "") to \(destination.currentClass?.name ?? "")")
+//        let start = startingViewController as! ClassController
+//        let destination = destinationViewController as! ClassController
+//        
+//        print("Will start scrolling from \(start.currentClass?.name ?? "") to \(destination.currentClass?.name ?? "")")
     }
     
     func em_pageViewController(_ pageViewController: EMPageViewController, isScrollingFrom startingViewController: UIViewController, destinationViewController: UIViewController, progress: CGFloat) {
         
-        let start = startingViewController as! ClassController
-        let destination = destinationViewController as! ClassController
-        
-        print("Is scrolling from \(start.currentClass?.name ?? "") to \(destination.currentClass?.name ?? "") with progress '\(progress)'.")
+//        let start = startingViewController as! ClassController
+//        let destination = destinationViewController as! ClassController
+//        
+//        print("Is scrolling from \(start.currentClass?.name ?? "") to \(destination.currentClass?.name ?? "") with progress '\(progress)'.")
     }
     
     func em_pageViewController(_ pageViewController: EMPageViewController, didFinishScrollingFrom startingViewController: UIViewController?, destinationViewController: UIViewController, transitionSuccessful: Bool) {
         
-        let start = startingViewController as! ClassController?
-        let destination = destinationViewController as! ClassController
-        
-        print("Finished scrolling from \(start?.currentClass?.name ?? "") to \(destination.currentClass?.name ?? ""). Transition successful? \(transitionSuccessful)")
+//        let start = startingViewController as! ClassController?
+//        let destination = destinationViewController as! ClassController
+//        
+//        print("Finished scrolling from \(start?.currentClass?.name ?? "") to \(destination.currentClass?.name ?? ""). Transition successful? \(transitionSuccessful)")
     }
 }
 

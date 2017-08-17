@@ -21,18 +21,13 @@ class MainController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        NotificationCenter.default.addObserver(forName: .classIsReady, object: nil, queue: nil, using: catchClassIsReady)
+        NotificationCenter.default.addObserver(forName: .classIsReady, object: nil, queue: nil, using: updateGPA)
     }
     
-    func updateGPA() {
+    func updateGPA(notification: Notification) {
         projectedGPA.text = String(format: "%.2f", (student?.projectGPA())!)
     }
-    
-    func catchClassIsReady(notification: Notification) {
-        guard let currentClass = notification.userInfo!["class"] as! Class? else { return }
-        student?.classes.append(currentClass)
-        updateGPA()
-    }
+
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "classList" {

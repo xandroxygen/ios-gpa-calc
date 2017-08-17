@@ -13,7 +13,11 @@ class CreditHoursCollectionController: UICollectionViewController {
     fileprivate let reuseIdentifier = "CreditHour"
     fileprivate var creditHours = [5, 4, 3, 2, 1, 0.5]
     weak var delegate: CreditHoursDelegate?
-
+    
+    func selectHours(hours: Double) {
+        let path = IndexPath(row: creditHours.index(of: hours)!, section: 0)
+        self.collectionView?.selectItem(at: path, animated: false, scrollPosition: .centeredHorizontally)
+    }
     
     override func collectionView(_ collectionView: UICollectionView,
                                  numberOfItemsInSection section: Int) -> Int {

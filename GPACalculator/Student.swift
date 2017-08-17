@@ -24,8 +24,10 @@ class Student {
         var totalHours = initialCreditHours
         var totalPoints = initialPoints
         for c in classes {
-            totalHours += c.creditHours ?? 0
-            totalPoints += gradingScale.getDefault()[(c.grade ?? "A")]! * (c.creditHours ?? 0)
+            if c.isValid() {
+                totalHours += c.creditHours ?? 0
+                totalPoints += gradingScale.getDefault()[(c.grade!)]! * (c.creditHours!)
+            }
         }
         return totalPoints / totalHours
     }

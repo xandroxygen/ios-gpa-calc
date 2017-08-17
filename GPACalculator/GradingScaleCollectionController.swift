@@ -14,6 +14,11 @@ class GradingScaleCollectionController: UICollectionViewController {
     fileprivate var gradingScale = ["A", "A-", "B+", "B", "B-", "C+", "C", "C-", "D+", "D", "D-", "E"]
     weak var delegate: GradingScaleDelegate?
     
+    func selectGrade(grade: String) {
+        let path = IndexPath(row: gradingScale.index(of: grade)!, section: 0)
+        self.collectionView?.selectItem(at: path, animated: false, scrollPosition: .centeredHorizontally)
+    }
+    
     override func collectionView(_ collectionView: UICollectionView,
                                  numberOfItemsInSection section: Int) -> Int {
         return gradingScale.count
