@@ -17,7 +17,7 @@ class Student {
     
     init() {
         gradingScale = GradingScale()
-        classes = [ Class(), Class() ]
+        classes = [ Class() ]
     }
     
     func projectGPA() -> Double {
